@@ -7,8 +7,50 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+      nav, .jumbotron, footer {background-color: #452924;}
+      .btn-primary {
+        background-color: white;
+        border-color: white;
+        color: black;
+      }
+      .btn-primary:hover {
+        background-color: #452924;
+        border-color: #885147;
+        color: white;
+          cursor: pointer;
+      }
+      .btn-primary:active {
+        background-color: #452924;
+        border-color: #885147;
+        color: white;
+      }
+      .btn-primary:focus, .fa-facebook-official:focus {
+        box-shadow: 0 0 0 2px rgba(136, 81, 71, .5);
+      }
+      body {
+        color: white;
+        background-color: #341f1b;
+      }
+      .fa-facebook-official {
+        color: white; 
+        font-size: 9rem;
+      }
+      .fa-facebook-official:hover {
+        color: #341f1b; 
+        font-size: 9rem;
+      }
+      @media (max-width: 576px) { 
+        .last-name-field {padding-top: .8em;}
+      }
+    </style>
   </head>
   <body>
+    <nav class="navbar">
+      <a style="color: white;" class="navbar-brand" href="/">Le Menuet</a>
+    </nav>
 
     {{ content }}
 
